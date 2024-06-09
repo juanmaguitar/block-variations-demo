@@ -38,30 +38,17 @@ wp.blocks.registerBlockVariation(
 );
 
 wp.blocks.registerBlockVariation(
-  'core/paragraph',
+  'core/query',
   {
-      name: 'paragraph-custom',
-      title: 'Custom Paragraph',
+      name: 'custom-query',
+      title: 'Custom Query Loop',
       scope: ["block", "inserter", "transform"],
       attributes: {
-          textColor: 'blue',
-          namespace: 'custom'
+        namespace: 'custom',
       },
-      isActive: (blockAttributes, variationAttributes) => {
-          console.log(blockAttributes)
-          console.log(variationAttributes)
-          return blockAttributes.textColor === 'blue' && variationAttributes.namespace === 'custom'
-    }
+      isActive: [ 'namespace' ]
   }
 );
-
-const isAdvancedQueryLoop = ( props ) => {
-	const {
-		attributes: { namespace },
-	} = props;
-	return namespace && namespace === AQL;
-};
-
 
 wp.blocks.registerBlockVariation(
   'core/quote',

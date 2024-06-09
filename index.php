@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Block Variation Demo
-Description: This is a simple plugin that loads a JavaScript file
+Plugin Name: Block Variations Demo
+Description: Simple plugin that loads a JavaScript file to register block variations.
 Version: 1.0
-Author: Your Name
+Author: JuanMa Garrido
 */
 
 function enqueue_block_variations() {
@@ -23,7 +23,8 @@ function enqueue_block_variations() {
 		array(
 			'wp-blocks',
 			'wp-block-editor',
-            'wp-data'
+            'wp-data',
+			'wp-dom-ready'
 		),
 		wp_get_theme()->get( 'Version' ),
 		true

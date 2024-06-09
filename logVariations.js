@@ -15,6 +15,12 @@ const getLogUnique = () => {
 
 const log = getLogUnique()
 
+wp.domReady(() =>{
+    const { getBlockTypes } = wp.data.select("core/blocks");
+    const blocks = getBlockTypes();
+    console.log('blocks', blocks)
+} );
+
 wp.data.subscribe(() => {
   
   const { getSelectedBlock } = wp.data.select("core/block-editor");
