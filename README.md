@@ -1,6 +1,6 @@
 # Block Variation Demo
 
-[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanmaguitar/block-variations-demo/main/_playground/blueprint.json)
+[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanmaguitar/block-variations-demo/main/_playground/blueprint.json) [![](https://img.shields.io/badge/loom-demo%20video-purple?logo=loom)](https://www.loom.com/share/1188bd2c8acf457a883a81a35cfae6e3?sid=adf31a74-7846-4602-b984-74a060c2b869)
 
 
 The goal of this repos is to show how the registration of block variations works from a WordPress plugin.
